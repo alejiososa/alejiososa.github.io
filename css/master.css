@@ -100,6 +100,11 @@ p {
 	font-family: verdana;
 }
 
+form {
+	font-family: verdana;
+}
+
+
 #art {   
     width: 1400px;
 	display:block;
