@@ -14,19 +14,47 @@ body {
 #container {
 	display: block;
 	min-height: 100%;
-	overflow: hidden;
+	overflow: auto;
 	overflow-x: scroll;	
+	margin: 50px 0 0 0;
 }
 
-div {
-	background-color: #FFFFFF;
+#container1 {
+	display: block;
+	min-height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin: 50px 0 0 0;
+	background-image:url(../bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 1920px 1080px
+}
+
+#static {
+	background-color:#000000;
+	color: white;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 5px 5px 5px 0px;
+}
+
+#table	{
+	background-color: #000000;
+	color: white;
+	font-family: raleway;
+	padding-left: -30px;
+	padding-top: 15px;
 }
 
 #header		{
-			text-indent: 40px;
-			font-family: helvetica, arial, verdana sans-serif;
-			font-size: 50px;
-			opacity: 1.0;
+		text-indent: 40px;
+		font-family: helvetica, raleway, verdana sans-serif;
+		font-size: 50px;	
+		opacity: 1.0;
 		margin-top: -50px;
 		margin-bottom: -50px;
 		background-color:#FFFFFF;
@@ -40,15 +68,29 @@ div {
 	padding-bottom: 25px;
 }
 
-ul#horiz {
-	list-style: none;
-	display: inline;
-	min-width: 696px;
-	padding-top: 90px;
+ul, li {
+	list-style-type: none;
+	font-family: raleway;
 }
 
-ul#horiz li {
+ul#horiz-left {
+	float: left;
+	list-style: none;
+}
+ul#horiz-left li {
 	display: inline;
+	padding-right: 50px;
+}
+ul#horiz-right {
+	float: right;
+	list-style: none;
+	display: inline;
+	padding-right: 50px;
+	
+}
+ul#horiz-right li {
+	display: inline;
+	padding-left: 50px;
 }
 
 #nav {
@@ -68,13 +110,9 @@ ul#horiz li {
 	width: 80%;
 		}
 
-ul, li {
-	list-style-type: none;
-}
-
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-weight: bold;
 }
 
@@ -88,6 +126,15 @@ a:hover {
 	font-size: 50px;
 	margin: 0px;
 	margin-bottom: -10px;
+}
+
+#title1 {
+	font-family: arial;
+	text-align: center;
+	font-size: 50px;
+	margin: 0px;
+	margin-bottom: -10px;
+	color: white;
 }
 
 #section {
